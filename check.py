@@ -6,7 +6,7 @@ from pathlib import Path
 
 CHANNELS = ["prodigeekOfferte", "JustTrackIt"]
 HERE = Path(__file__).parent
-STATE, STORICO = HERE / "state.json", HERE / "storico.json"
+STATE, STORICO, PREF = HERE / "state.json", HERE / "storico.json", HERE / "preferenze.md"
 UA = {"User-Agent": "Mozilla/5.0"}
 MAX_PER_CAT, MAX_GIORNI = 20, 120
 
@@ -40,13 +40,62 @@ def stats(prezzi):
     return {"n": len(prezzi), "min": min(prezzi), "mediana": statistics.median(prezzi)} if prezzi else None
 
 
+def haiku(prompt, regex):
+    out = subprocess.run(["claude", "-p", "--model", "haiku", "--effort", "high", prompt],
+                         capture_output=True, text=True, encoding="utf8", timeout=600)
+    m = re.search(regex, out.stdout, re.S)
+    if out.returncode or not m:
+        sys.exit(f"Haiku non ha risposto bene: {out.stderr[-500:]} {out.stdout[-500:]}")
+    return json.loads(m.group(0))
+
+
+def criteri():
+    c = (HERE / "criteri.md").read_text(encoding="utf8")
+    pref = PREF.read_text(encoding="utf8").strip() if PREF.exists() else ""
+    return c + (f"\n\nPreferenze aggiunte dall'utente in chat (hanno la precedenza):\n{pref}" if pref else "")
+
+
+def chat(state):
+    """Legge i messaggi dell'utente al bot, fa rispondere Haiku e aggiorna preferenze.md."""
+    url = f"https://api.telegram.org/bot{os.environ['TELEGRAM_BOT_TOKEN']}/getUpdates"
+    upd = json.loads(get(f"{url}?offset={state.get('tg_offset', 0)}&timeout=0"))["result"]
+    if upd:
+        state["tg_offset"] = upd[-1]["update_id"] + 1
+    msgs = [u["message"] for u in upd if "message" in u and "text" in u["message"]
+            and str(u["message"]["from"]["id"]) == os.environ["TELEGRAM_CHAT_ID"]]  # solo tu
+    if not msgs:
+        return
+    inviati = {o["mid"]: o for o in state.get("inviati", [])}
+    righe = []
+    for m in msgs:
+        rif = inviati.get(m.get("reply_to_message", {}).get("message_id"))
+        righe.append(f"- {m['text']}" + (f"  [in risposta all'offerta {rif['k']}]" if rif else ""))
+    recenti = "\n".join(f"- {o['k']}: {o['esito']}, {o['cat']}, {o['prezzo']}€ — {o['testo']}"
+                        for o in state.get("inviati", [])[-15:])
+    r = haiku(f"""Sei l'assistente di un filtro di offerte Telegram e parli con il suo utente.
+Criteri attuali:
+{criteri()}
+
+Ultime offerte che gli hai segnalato:
+{recenti or "(nessuna)"}
+
+Messaggi dell'utente:
+{chr(10).join(righe)}
+
+Rispondi in JSON: {{"risposta": "<risposta breve e cordiale in italiano>", "preferenze": "<l'elenco
+COMPLETO e aggiornato delle preferenze aggiunte in chat, una per riga con '- ', integrando le
+indicazioni nuove (es. cosa gli interessa o no, prezzi massimi) e togliendo quelle che l'utente
+revoca; stringa vuota se nessuna>"}}. Rispondi SOLO con il JSON.""", r"\{.*\}")
+    PREF.write_text(r.get("preferenze", "").strip() + "\n", encoding="utf8")
+    send(html.escape(r.get("risposta", "Ok.")))
+
+
 def ask_haiku(posts, storico):
     """posts: [(chiave, testo)]. Ritorna {chiave: {cat, prezzo, esito, motivo}}."""
-    criteri = (HERE / "criteri.md").read_text(encoding="utf8")
     righe = [f"- {c}: {', '.join(f'{e['p']:g}' for e in v)}" for c, v in storico.items()]
     elenco = "\n\n".join(f"### {k}\n{t[:1500]}" for k, t in posts)
     prompt = f"""Sei un filtro di offerte. Criteri dell'utente:
-{criteri}
+{criteri()}
 
 Storico prezzi recenti per tipo di prodotto (euro, dal più vecchio):
 {chr(10).join(righe) or "(vuoto)"}
@@ -59,12 +108,7 @@ Per OGNI offerta dai: "k" (la chiave dopo ###), "cat" (tipo di prodotto preciso 
 adatto, riusa ESATTAMENTE quel nome), "prezzo" (numero in euro o null), "esito" ("scarta", "buona"
 o "errore" = errore di prezzo), "motivo" (max 15 parole, in italiano).
 Rispondi SOLO con un array JSON di oggetti."""
-    out = subprocess.run(["claude", "-p", "--model", "haiku", "--effort", "high", prompt],
-                         capture_output=True, text=True, encoding="utf8", timeout=600)
-    m = re.search(r"\[.*\]", out.stdout, re.S)
-    if out.returncode or not m:
-        sys.exit(f"Haiku non ha risposto bene: {out.stderr[-500:]} {out.stdout[-500:]}")
-    return {r["k"]: r for r in json.loads(m.group(0)) if isinstance(r, dict) and "k" in r}
+    return {r["k"]: r for r in haiku(prompt, r"\[.*\]") if isinstance(r, dict) and "k" in r}
 
 
 def da_inviare(r, storico):
@@ -91,11 +135,13 @@ def messaggio(k, testo, r, storico):
 def send(text):
     data = urllib.parse.urlencode({"chat_id": os.environ["TELEGRAM_CHAT_ID"], "text": text[:4000],
                                    "parse_mode": "HTML"}).encode()
-    urllib.request.urlopen(f"https://api.telegram.org/bot{os.environ['TELEGRAM_BOT_TOKEN']}/sendMessage", data, timeout=30)
+    r = urllib.request.urlopen(f"https://api.telegram.org/bot{os.environ['TELEGRAM_BOT_TOKEN']}/sendMessage", data, timeout=30)
+    return json.loads(r.read())["result"]["message_id"]
 
 
 def main():
     state, storico = load(STATE), load(STORICO)
+    chat(state)  # prima la chat, così le preferenze nuove valgono già per questo giro
     ripassa = int(os.environ.get("RIPASSA") or 0)  # prova manuale: rivaluta gli ultimi N post per canale
     nuovi = []
     for ch in CHANNELS:
@@ -119,8 +165,11 @@ def main():
                 continue
             print(k, r.get("esito"), r.get("cat"), r.get("prezzo"))
             if da_inviare(r, storico):
-                send(messaggio(k, testo, r, storico))
+                mid = send(messaggio(k, testo, r, storico))
                 inviati += 1
+                state["inviati"] = state.get("inviati", [])[-29:] + [{
+                    "mid": mid, "k": k, "cat": r.get("cat"), "prezzo": r.get("prezzo"),
+                    "esito": r["esito"], "testo": testo[:200]}]
             if r.get("cat") and isinstance(r.get("prezzo"), (int, float)) and not ripassa:
                 storico.setdefault(r["cat"], []).append({"p": r["prezzo"], "d": oggi})
         limite = time.strftime("%Y-%m-%d", time.localtime(time.time() - MAX_GIORNI * 86400))

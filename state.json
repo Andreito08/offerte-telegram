@@ -1,4 +1,22 @@
 {
  "prodigeekOfferte": 27503,
- "JustTrackIt": 23847
+ "JustTrackIt": 23847,
+ "inviati": [
+  {
+   "mid": 0,
+   "k": "prodigeekOfferte/27494",
+   "cat": "Monitor gaming 34 pollici QD-OLED",
+   "prezzo": 649.0,
+   "esito": "buona",
+   "testo": "Monitor gaming 34 pollici QD-OLED"
+  },
+  {
+   "mid": 0,
+   "k": "prodigeekOfferte/27499",
+   "cat": "Monitor gaming 27 pollici OLED 240Hz",
+   "prezzo": 299.99,
+   "esito": "buona",
+   "testo": "Monitor gaming 27 pollici OLED 240Hz"
+  }
+ ]
 }
