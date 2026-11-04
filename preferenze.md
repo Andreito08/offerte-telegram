@@ -1,3 +1,3 @@
-- Monitor: non interessano, a meno che non siano un affare (offertone o errore di prezzo).
+- Monitor: non mi interessano, a meno che non siano un affare (offertone o errore di prezzo).
 - Segnala sempre le offerte che nel canale vengono descritte come affari (es. 'prezzo bomba' o espressioni simili), anche se non rientrano negli altri criteri; per trovarle guarda lo storico del canale.
 - Le offerte segnalate vanno marcate come urgenti/importanti, non come normali.
