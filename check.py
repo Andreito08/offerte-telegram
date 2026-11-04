@@ -70,7 +70,7 @@ def chat(state):
     for m in msgs:
         rif = inviati.get(m.get("reply_to_message", {}).get("message_id"))
         righe.append(f"- {m['text']}" + (f"  [in risposta all'offerta {rif['k']}]" if rif else ""))
-    recenti = "\n".join(f"- {o['k']}: {o['esito']}, {o['cat']}, {o['prezzo']}€ — {o['testo']}"
+    recenti = "\n".join(f"- {o['k']}: {o['esito']}, {o['cat']}, {o['prezzo']}€ (motivo: {o.get('motivo') or '?'}) — {o['testo']}"
                         for o in state.get("inviati", [])[-15:])
     r = haiku(f"""Sei l'assistente di un filtro di offerte Telegram e parli con il suo utente.
 Criteri attuali:
@@ -163,13 +163,13 @@ def main():
             r = esiti.get(k)
             if not r:
                 continue
-            print(k, r.get("esito"), r.get("cat"), r.get("prezzo"))
+            print(k, r.get("esito"), r.get("cat"), r.get("prezzo"), "—", r.get("motivo", ""))
             if da_inviare(r, storico):
                 mid = send(messaggio(k, testo, r, storico))
                 inviati += 1
                 state["inviati"] = state.get("inviati", [])[-29:] + [{
                     "mid": mid, "k": k, "cat": r.get("cat"), "prezzo": r.get("prezzo"),
-                    "esito": r["esito"], "testo": testo[:200]}]
+                    "esito": r["esito"], "motivo": r.get("motivo", ""), "testo": testo[:200]}]
             if r.get("cat") and isinstance(r.get("prezzo"), (int, float)) and not ripassa:
                 storico.setdefault(r["cat"], []).append({"p": r["prezzo"], "d": oggi})
         limite = time.strftime("%Y-%m-%d", time.localtime(time.time() - MAX_GIORNI * 86400))
