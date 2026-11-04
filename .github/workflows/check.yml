@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install -g @anthropic-ai/claude-code
+      - name: Prova token Claude (solo avvio manuale)
+        if: github.event_name == 'workflow_dispatch'
+        run: claude -p --model haiku "Rispondi solo: ok"
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       - run: python check.py
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
