@@ -1,0 +1,1 @@
+- Monitor: non interessano, a meno che non siano un affare (offertone o errore di prezzo).
