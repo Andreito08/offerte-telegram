@@ -1,5 +1,5 @@
 {
- "prodigeekOfferte": 27519,
+ "prodigeekOfferte": 27520,
  "JustTrackIt": 23855,
  "inviati": [
   {
@@ -57,6 +57,14 @@
    "prezzo": 230.08,
    "esito": "buona",
    "testo": "Processore AMD Ryzen 9 9900X 12-Core 24-Thread, 5.6GHz, 64MB Cache L3, Socket AM5, DDR5, TDP 120W, Serie 9000 Senza Ventola\n\n👉 https://s.click.aliexpress.com/e/_c2JT91HD\n\n💰 Prezzo: 230.08€ + spedizion"
+  },
+  {
+   "mid": 26,
+   "k": "prodigeekOfferte/27520",
+   "cat": "Scheda madre AM5 X870E",
+   "prezzo": 296.39,
+   "esito": "buona",
+   "testo": "ASUS ROG Crosshair X870E Apex, Carte mère ATX, 18+2+2 étages d'alimentation, Fente DDR5, Trois PCIe 5.0, Deux PCIe 4.0 M.2, Ports USB4, Wi-FI 7, Ethernet, AI Overclocking, PCIe Q-Release Slim, Noir\n\n👉"
   }
  ],
  "tg_offset": 512829221
