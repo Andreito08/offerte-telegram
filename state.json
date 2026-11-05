@@ -1,5 +1,5 @@
 {
- "prodigeekOfferte": 27531,
+ "prodigeekOfferte": 27533,
  "JustTrackIt": 23858,
  "inviati": [
   {
@@ -73,6 +73,14 @@
    "prezzo": 65.15,
    "esito": "errore",
    "testo": "Bomba!\n\nGIGABYTE Placa Base B850 Gaming X WIFI6E AMD AM5 ATX, Compatible con AMD Ryzen Serie 9000/8000/7000, DDR5, Fase de alimentación 12+2+2, 3X M.2, PCIe 5.0, USB-C, WIFI6E, LAN de 2.5GbE, EZ-Latch"
+  },
+  {
+   "mid": 30,
+   "k": "prodigeekOfferte/27532",
+   "cat": "SSD 2TB",
+   "prezzo": 104.39,
+   "esito": "buona",
+   "testo": "Prezzone\n\nSSD Netac M.2 NVME PCIe Gen4X4 1TB 2TB 4TB Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Gr"
   }
  ],
  "tg_offset": 512829222
