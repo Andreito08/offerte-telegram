@@ -1,5 +1,5 @@
 {
- "prodigeekOfferte": 27528,
+ "prodigeekOfferte": 27530,
  "JustTrackIt": 23858,
  "inviati": [
   {
@@ -65,6 +65,14 @@
    "prezzo": 296.39,
    "esito": "buona",
    "testo": "ASUS ROG Crosshair X870E Apex, Carte mère ATX, 18+2+2 étages d'alimentation, Fente DDR5, Trois PCIe 5.0, Deux PCIe 4.0 M.2, Ports USB4, Wi-FI 7, Ethernet, AI Overclocking, PCIe Q-Release Slim, Noir\n\n👉"
+  },
+  {
+   "mid": 29,
+   "k": "prodigeekOfferte/27529",
+   "cat": "Scheda madre AM5 B850",
+   "prezzo": 65.15,
+   "esito": "errore",
+   "testo": "Bomba!\n\nGIGABYTE Placa Base B850 Gaming X WIFI6E AMD AM5 ATX, Compatible con AMD Ryzen Serie 9000/8000/7000, DDR5, Fase de alimentación 12+2+2, 3X M.2, PCIe 5.0, USB-C, WIFI6E, LAN de 2.5GbE, EZ-Latch"
   }
  ],
  "tg_offset": 512829222
