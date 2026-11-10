@@ -1,5 +1,5 @@
 {
- "prodigeekOfferte": 27654,
+ "prodigeekOfferte": 27655,
  "JustTrackIt": 23909,
  "inviati": [
   {
@@ -201,6 +201,14 @@
    "prezzo": 230.04,
    "esito": "buona",
    "testo": "Processore AMD Ryzen 9 9900X 12-Core 24-Thread, 5.6GHz, 64MB Cache L3, Socket AM5, DDR5, TDP 120W, Serie 9000 Senza Ventola\n\n👉 https://s.click.aliexpress.com/e/_c3BtohsL\n\n💰 Prezzo: 230.04€ + spedizion"
+  },
+  {
+   "mid": 54,
+   "k": "prodigeekOfferte/27655",
+   "cat": "Dissipatore AIO 360mm",
+   "prezzo": 56.0,
+   "esito": "buona",
+   "testo": "Sudokoo ENERGLO 360 Dissipatore Liquido 360mm: AIO 360mm con Schermo LCD a Segmenti - Raffreddamento Liquido PC con Tre Ventole PWM FDB & Pompa 2500-3400 PWM, Intel LGA1851/1700/1200/115X AMD AM5/AM4\n"
   }
  ],
  "tg_offset": 512829222
