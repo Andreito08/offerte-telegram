@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27677,
+ "prodigeekOfferte": 27679,
  "JustTrackIt": 23918,
  "inviati": [
-  {
-   "mid": 0,
-   "k": "prodigeekOfferte/27499",
-   "cat": "Monitor gaming 27 pollici OLED 240Hz",
-   "prezzo": 299.99,
-   "esito": "buona",
-   "testo": "Monitor gaming 27 pollici OLED 240Hz"
-  },
   {
    "mid": 14,
    "k": "prodigeekOfferte/27507",
@@ -241,6 +233,14 @@
    "prezzo": 99.39,
    "esito": "buona",
    "testo": "SSD Netac M.2 NVME PCIe Gen4X4 1TB Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Grafene per PS5 Lapt"
+  },
+  {
+   "mid": 60,
+   "k": "prodigeekOfferte/27678",
+   "cat": "SSD NVMe 4TB",
+   "prezzo": 320.69,
+   "esito": "buona",
+   "testo": "SSD Netac M.2 NVME PCIe Gen4X4 4TB Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Grafene per PS5 Lapt"
   }
  ],
  "tg_offset": 512829222
