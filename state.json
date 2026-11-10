@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27681,
+ "prodigeekOfferte": 27682,
  "JustTrackIt": 23918,
  "inviati": [
-  {
-   "mid": 14,
-   "k": "prodigeekOfferte/27507",
-   "cat": "Scheda madre Z890 LGA1851",
-   "prezzo": 275.43,
-   "esito": "buona",
-   "testo": "ASRock Phantom Gaming Z890 NOVA WIFI - Motherboard - ATX - LGA1851 Sockel - Z890 Chipsatz - USB4, USB-C 3.2 Gen 2x2, USB 3.2 Gen 2, USB 3.2 Gen 1 - 5 Gigabit Ethernet, Wi-Fi 7, Bluetooth - Onboard-Gr\n"
-  },
   {
    "mid": 22,
    "k": "prodigeekOfferte/27513",
@@ -241,6 +233,14 @@
    "prezzo": 320.69,
    "esito": "buona",
    "testo": "SSD Netac M.2 NVME PCIe Gen4X4 4TB Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Grafene per PS5 Lapt"
+  },
+  {
+   "mid": 61,
+   "k": "prodigeekOfferte/27682",
+   "cat": "Processore AMD Ryzen 5 9600X",
+   "prezzo": 108.9,
+   "esito": "buona",
+   "testo": "Processore AMD Ryzen 5 9600X Originale, 6 Core 12 Thread, Frequenza di Accelerazione fino a 5.4GHz, 4NM, TDP 65W, Socket AM5\n\n👉 https://s.click.aliexpress.com/e/_c3LF5EAb\n\n💰 Prezzo: 108.9€ + spedizion"
   }
  ],
  "tg_offset": 512829222
