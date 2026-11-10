@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27684,
+ "prodigeekOfferte": 27685,
  "JustTrackIt": 23918,
  "inviati": [
-  {
-   "mid": 22,
-   "k": "prodigeekOfferte/27513",
-   "cat": "Processore AMD Ryzen 7 7800X3D",
-   "prezzo": 169.49,
-   "esito": "buona",
-   "testo": "Processore Gaming AMD Ryzen 7 7800X3D, 8-Core 96MB 3D V-Cache, Socket AM5, 5.0GHz, Ventola Non Inclusa\n\n👉 https://s.click.aliexpress.com/e/_c4MmFUG7\n\n💰 Prezzo: 169.49€ + spedizione gratuita\n🇨🇳 Venduto"
-  },
   {
    "mid": 23,
    "k": "prodigeekOfferte/27514",
@@ -241,6 +233,14 @@
    "prezzo": 108.9,
    "esito": "buona",
    "testo": "Processore AMD Ryzen 5 9600X Originale, 6 Core 12 Thread, Frequenza di Accelerazione fino a 5.4GHz, 4NM, TDP 65W, Socket AM5\n\n👉 https://s.click.aliexpress.com/e/_c3LF5EAb\n\n💰 Prezzo: 108.9€ + spedizion"
+  },
+  {
+   "mid": 62,
+   "k": "prodigeekOfferte/27685",
+   "cat": "SSD 2TB",
+   "prezzo": 185.99,
+   "esito": "buona",
+   "testo": "SSD Netac M.2 NVME PCIe Gen4X4  2TB  Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Grafene per PS5 La"
   }
  ],
  "tg_offset": 512829222
