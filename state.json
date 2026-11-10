@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27688,
+ "prodigeekOfferte": 27689,
  "JustTrackIt": 23918,
  "inviati": [
-  {
-   "mid": 23,
-   "k": "prodigeekOfferte/27514",
-   "cat": "Mini PC AMD Ryzen 7 8745HS 16GB 512GB",
-   "prezzo": 241.32,
-   "esito": "buona",
-   "testo": "Torna la Bomba Chuwi!\n\nCHUWI AuBox Mini PC AMD R7 8745HS con OCulink, 16GB RAM, 512GB SSD, Windows 11, Display 4K 60Hz, WiFi 6, BT 5.1, Espandibile M.2 2T*2\n\n👉 https://s.click.aliexpress.com/e/_c3hJDz"
-  },
   {
    "mid": 24,
    "k": "prodigeekOfferte/27515",
@@ -241,6 +233,14 @@
    "prezzo": 185.99,
    "esito": "buona",
    "testo": "SSD Netac M.2 NVME PCIe Gen4X4  2TB  Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Grafene per PS5 La"
+  },
+  {
+   "mid": 63,
+   "k": "prodigeekOfferte/27689",
+   "cat": "Controller wireless PC",
+   "prezzo": 17.0,
+   "esito": "errore",
+   "testo": "8BitDo - Nuovo controller di gioco wireless Ultimate 2C per PC, Windows 10, 11, Steam Deck, Raspberry Pi, Android\n\n👉 https://s.click.aliexpress.com/e/_c3vRhNT1\n\n💰 Prezzo: 17.0€ + spedizione gratuita\n🇨"
   }
  ],
  "tg_offset": 512829222
