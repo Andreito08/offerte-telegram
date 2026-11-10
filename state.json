@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27676,
+ "prodigeekOfferte": 27677,
  "JustTrackIt": 23918,
  "inviati": [
-  {
-   "mid": 0,
-   "k": "prodigeekOfferte/27494",
-   "cat": "Monitor gaming 34 pollici QD-OLED",
-   "prezzo": 649.0,
-   "esito": "buona",
-   "testo": "Monitor gaming 34 pollici QD-OLED"
-  },
   {
    "mid": 0,
    "k": "prodigeekOfferte/27499",
@@ -241,6 +233,14 @@
    "prezzo": 135.15,
    "esito": "buona",
    "testo": "Bomba OP Watch 4!\n\nOnePlus Watch 4, smartwatch versione globale, multilingue, con cassa in titanio e vetro zaffiro, display AMOLED da 1,5 pollici, 3000 nit, oltre 100 modalità sportive, monitoraggio d"
+  },
+  {
+   "mid": 59,
+   "k": "prodigeekOfferte/27677",
+   "cat": "SSD 1TB",
+   "prezzo": 99.39,
+   "esito": "buona",
+   "testo": "SSD Netac M.2 NVME PCIe Gen4X4 1TB Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Grafene per PS5 Lapt"
   }
  ],
  "tg_offset": 512829222
