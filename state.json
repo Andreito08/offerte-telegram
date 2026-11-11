@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27710,
+ "prodigeekOfferte": 27711,
  "JustTrackIt": 23923,
  "inviati": [
-  {
-   "mid": 24,
-   "k": "prodigeekOfferte/27515",
-   "cat": "Mini PC AMD Ryzen 7 8745HS 16GB 512GB",
-   "prezzo": 236.32,
-   "esito": "buona",
-   "testo": "Torna a prezzone!\n\nCHUWI AuBox Mini PC AMD R7 8745HS con OCulink, 16GB RAM, 512GB SSD, Windows 11, Display 4K 60Hz, WiFi 6, BT 5.1, Espandibile M.2 2T*2\n\n👉 https://s.click.aliexpress.com/e/_c3UXal27\n\n"
-  },
   {
    "mid": 25,
    "k": "prodigeekOfferte/27517",
@@ -241,6 +233,14 @@
    "prezzo": 17.0,
    "esito": "errore",
    "testo": "8BitDo - Nuovo controller di gioco wireless Ultimate 2C per PC, Windows 10, 11, Steam Deck, Raspberry Pi, Android\n\n👉 https://s.click.aliexpress.com/e/_c3vRhNT1\n\n💰 Prezzo: 17.0€ + spedizione gratuita\n🇨"
+  },
+  {
+   "mid": 64,
+   "k": "prodigeekOfferte/27711",
+   "cat": "Processore AMD Ryzen 7 7700",
+   "prezzo": 110.96,
+   "esito": "buona",
+   "testo": "CPU AMD Ryzen 7 7700, 8 Core, 16 Thread, fino a 5.3GHz, Socket AM5, Processore Desktop da 65W\n\n👉 https://s.click.aliexpress.com/e/_c4pqXjen\n\n💰 Prezzo: 110.96€ + spedizione gratuita\n🇨🇳 Venduto su Aliex"
   }
  ],
  "tg_offset": 512829222
