@@ -1,15 +1,7 @@
 {
  "prodigeekOfferte": 27717,
- "JustTrackIt": 23931,
+ "JustTrackIt": 23932,
  "inviati": [
-  {
-   "mid": 26,
-   "k": "prodigeekOfferte/27520",
-   "cat": "Scheda madre AM5 X870E",
-   "prezzo": 296.39,
-   "esito": "buona",
-   "testo": "ASUS ROG Crosshair X870E Apex, Carte mère ATX, 18+2+2 étages d'alimentation, Fente DDR5, Trois PCIe 5.0, Deux PCIe 4.0 M.2, Ports USB4, Wi-FI 7, Ethernet, AI Overclocking, PCIe Q-Release Slim, Noir\n\n👉"
-  },
   {
    "mid": 29,
    "k": "prodigeekOfferte/27529",
@@ -241,6 +233,14 @@
    "prezzo": 99.39,
    "esito": "buona",
    "testo": "SSD Netac M.2 NVME PCIe Gen4X4 1TB Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Grafene per PS5 Lapt"
+  },
+  {
+   "mid": 66,
+   "k": "JustTrackIt/23932",
+   "cat": "GPU RX 9070 16GB",
+   "prezzo": 567.61,
+   "esito": "buona",
+   "testo": "GIGABYTE Radeon RX 9070 Gaming OC 16G Scheda grafica PCIe 5.0 16GB GDDR6 GV-R9070GAMING OC-16GD\n\n♻️ Usato\n👉 https://amzlink.to/az00D0k7z1BYv\n\n⚡️Acquisto lampo\n\n💰 Prezzo: 567.61€ + Spedizione Gratuita "
   }
  ],
  "tg_offset": 512829222
