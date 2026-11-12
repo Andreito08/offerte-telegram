@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27724,
- "JustTrackIt": 23943,
+ "prodigeekOfferte": 27725,
+ "JustTrackIt": 23944,
  "inviati": [
-  {
-   "mid": 29,
-   "k": "prodigeekOfferte/27529",
-   "cat": "Scheda madre AM5 B850",
-   "prezzo": 65.15,
-   "esito": "errore",
-   "testo": "Bomba!\n\nGIGABYTE Placa Base B850 Gaming X WIFI6E AMD AM5 ATX, Compatible con AMD Ryzen Serie 9000/8000/7000, DDR5, Fase de alimentación 12+2+2, 3X M.2, PCIe 5.0, USB-C, WIFI6E, LAN de 2.5GbE, EZ-Latch"
-  },
   {
    "mid": 30,
    "k": "prodigeekOfferte/27532",
@@ -241,6 +233,14 @@
    "prezzo": 567.61,
    "esito": "buona",
    "testo": "GIGABYTE Radeon RX 9070 Gaming OC 16G Scheda grafica PCIe 5.0 16GB GDDR6 GV-R9070GAMING OC-16GD\n\n♻️ Usato\n👉 https://amzlink.to/az00D0k7z1BYv\n\n⚡️Acquisto lampo\n\n💰 Prezzo: 567.61€ + Spedizione Gratuita "
+  },
+  {
+   "mid": 67,
+   "k": "JustTrackIt/23944",
+   "cat": "SSD 1TB",
+   "prezzo": 81.64,
+   "esito": "buona",
+   "testo": "Samsung Memorie MZ-V9S1T0BW 990 EVO Plus SSD Interno da 1TB PCIe Gen 4.0 x4 / 5.0 x2 NVMe 2.0, memoria progettata per professionisti e giocatori occasionali, compatibile con PC\n\n♻️ Usato\n👉 https://amz"
   }
  ],
  "tg_offset": 512829222
