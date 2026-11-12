@@ -1,15 +1,7 @@
 {
  "prodigeekOfferte": 27733,
- "JustTrackIt": 23947,
+ "JustTrackIt": 23948,
  "inviati": [
-  {
-   "mid": 30,
-   "k": "prodigeekOfferte/27532",
-   "cat": "SSD 2TB",
-   "prezzo": 104.39,
-   "esito": "buona",
-   "testo": "Prezzone\n\nSSD Netac M.2 NVME PCIe Gen4X4 1TB 2TB 4TB Disco Rigido Interno a Stato Solido 7400MB/s Alta Velocità M.2 2280 NVME SSD NV7000-T con 5 Anni di Garanzia Design con Dissipatore di Calore in Gr"
-  },
   {
    "mid": 31,
    "k": "prodigeekOfferte/27535",
@@ -241,6 +233,14 @@
    "prezzo": 81.64,
    "esito": "buona",
    "testo": "Samsung Memorie MZ-V9S1T0BW 990 EVO Plus SSD Interno da 1TB PCIe Gen 4.0 x4 / 5.0 x2 NVMe 2.0, memoria progettata per professionisti e giocatori occasionali, compatibile con PC\n\n♻️ Usato\n👉 https://amz"
+  },
+  {
+   "mid": 68,
+   "k": "JustTrackIt/23948",
+   "cat": "GPU RX 9060 XT 16GB",
+   "prezzo": 421.52,
+   "esito": "buona",
+   "testo": "ASUS DUAL RX9060XT, Scheda Grafica 16 GB GDDR6 AMD Radeon, Bianca | 128 Bit, PCIe 5.0, 1 HDMI 2.1, 2 DisplayPort 2.1, Ventole Axial-Tech, Tecnologia 0db, GPU Tweak III, DUAL-RX9060XT-16G-WHITE\n\n♻️ Usa"
   }
  ],
  "tg_offset": 512829222
