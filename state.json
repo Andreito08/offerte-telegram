@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27752,
+ "prodigeekOfferte": 27753,
  "JustTrackIt": 23961,
  "inviati": [
-  {
-   "mid": 32,
-   "k": "prodigeekOfferte/27536",
-   "cat": "Dissipatore AIO 360mm",
-   "prezzo": 103.9,
-   "esito": "buona",
-   "testo": "TR Dynamic Vision 360 ARGB Bianco Dissipatore AIO CPU,Radiatore 360 mm | LCD IPS 5\" a colori, risoluzione 854×480, testa magnetica 3000 giri/min, compatibile AM4/AM5 LGA1851/1700/1200/115X\n\n👉 https://"
-  },
   {
    "mid": 33,
    "k": "prodigeekOfferte/27540",
@@ -241,6 +233,14 @@
    "prezzo": 74.9,
    "esito": "buona",
    "testo": "ASUS TUF GAMING 750W GOLD EVO, Alimentatore Modulare per PC, Nero | Certificazioni 80+ e Cybenetics Gold, PCIe 5.1, Sata a ATX 3.1, Ventole a Doppia Sfera, Rivestimento PCB, Cavi Incisi\n\n👉 https://amz"
+  },
+  {
+   "mid": 70,
+   "k": "prodigeekOfferte/27753",
+   "cat": "Case PC mid-tower",
+   "prezzo": 69.9,
+   "esito": "buona",
+   "testo": "Phanteks XT View Matrix Case da Gaming Mid-Tower, Schermo Matrix da 600 LED, Vetro Temperato Frontale e Laterale, USB-C 3.2 Gen2, 3x Ventole M25-120 D-RGB Incluse, Nero Carbone\n\n👉 https://amzlink.to/a"
   }
  ],
  "tg_offset": 512829222
