@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27740,
+ "prodigeekOfferte": 27741,
  "JustTrackIt": 23954,
  "inviati": [
-  {
-   "mid": 31,
-   "k": "prodigeekOfferte/27535",
-   "cat": "Scheda madre AM5 B850",
-   "prezzo": 77.45,
-   "esito": "buona",
-   "testo": "Prezzone\n\nScheda Madre Gaming SOYO AMD B850ITX Supporta RAM DDR5 Dual-channel Processori CPU AM5 Ryzen 7000 8000 9000 PCIE5.0x4 ARGB WiFi6\n\n👉 https://s.click.aliexpress.com/e/_c2vVwqnh\n\n💰 Prezzo: 77.4"
-  },
   {
    "mid": 32,
    "k": "prodigeekOfferte/27536",
@@ -241,6 +233,14 @@
    "prezzo": 421.52,
    "esito": "buona",
    "testo": "ASUS DUAL RX9060XT, Scheda Grafica 16 GB GDDR6 AMD Radeon, Bianca | 128 Bit, PCIe 5.0, 1 HDMI 2.1, 2 DisplayPort 2.1, Ventole Axial-Tech, Tecnologia 0db, GPU Tweak III, DUAL-RX9060XT-16G-WHITE\n\n♻️ Usa"
+  },
+  {
+   "mid": 69,
+   "k": "prodigeekOfferte/27741",
+   "cat": "Alimentatore PC 750W",
+   "prezzo": 74.9,
+   "esito": "buona",
+   "testo": "ASUS TUF GAMING 750W GOLD EVO, Alimentatore Modulare per PC, Nero | Certificazioni 80+ e Cybenetics Gold, PCIe 5.1, Sata a ATX 3.1, Ventole a Doppia Sfera, Rivestimento PCB, Cavi Incisi\n\n👉 https://amz"
   }
  ],
  "tg_offset": 512829222
