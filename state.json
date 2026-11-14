@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27757,
+ "prodigeekOfferte": 27758,
  "JustTrackIt": 23964,
  "inviati": [
-  {
-   "mid": 35,
-   "k": "JustTrackIt/23863",
-   "cat": "RAM DDR5 32GB 6000MHz",
-   "prezzo": 262.55,
-   "esito": "buona",
-   "testo": "Crucial Pro RAM DDR5 32GB Kit (2x16GB) 6000MHz CL36, Overclocking Gaming, Intel XMP 3.0 / AMD EXPO, Memoria PC, Nero - CP2K16G60C36U5B\n\n♻️ Usato\n👉 https://amzlink.to/az00SFzAKqzi7\n\n⚡️Acquisto lampo\n\n💰"
-  },
   {
    "mid": 36,
    "k": "JustTrackIt/23867",
@@ -241,6 +233,14 @@
    "prezzo": 421.52,
    "esito": "buona",
    "testo": "ASUS DUAL RX9060XT, Scheda Grafica 16 GB GDDR6 AMD Radeon, Bianca | 128 Bit, PCIe 5.0, 1 HDMI 2.1, 2 DisplayPort 2.1, Ventole Axial-Tech, Tecnologia 0db, GPU Tweak III, DUAL-RX9060XT-16G-WHITE\n\n♻️ Usa"
+  },
+  {
+   "mid": 73,
+   "k": "prodigeekOfferte/27758",
+   "cat": "Dissipatore AIO 360mm",
+   "prezzo": 61.13,
+   "esito": "buona",
+   "testo": "Thermalright-TR FW PRO 360 ARGB Weißer CPU-Wasserkühler mit PWM-Lüfter, 2000 Umdrehungen pro Minute, IPS-LCD-Bildschirm mit 320 * 320 Auflösung, für AM5/LGA 1851/1700, 2,73-Zoll-Bildschirm\n\n👉 https://"
   }
  ],
  "tg_offset": 512829222
