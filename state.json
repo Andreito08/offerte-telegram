@@ -1,15 +1,7 @@
 {
- "prodigeekOfferte": 27760,
+ "prodigeekOfferte": 27761,
  "JustTrackIt": 23965,
  "inviati": [
-  {
-   "mid": 36,
-   "k": "JustTrackIt/23867",
-   "cat": "GPU RX 9070 XT 16GB",
-   "prezzo": 27.6,
-   "esito": "errore",
-   "testo": "ASUS Tarjeta de Video AMD Radeon RX9070XT PCIe 5.0 16GB GDDR6 PRIME-RX9070XT-O16G\n\n👉 https://amzlink.to/az0FaKmuu5SBL\n\n⚡️Acquisto lampo\n\n💰 Prezzo: 27.6€ + Spedizione Prime\n🇪🇸 Spedizione Prime\n\nVerific"
-  },
   {
    "mid": 37,
    "k": "JustTrackIt/23868",
@@ -241,6 +233,14 @@
    "prezzo": 61.13,
    "esito": "buona",
    "testo": "Thermalright-TR FW PRO 360 ARGB Weißer CPU-Wasserkühler mit PWM-Lüfter, 2000 Umdrehungen pro Minute, IPS-LCD-Bildschirm mit 320 * 320 Auflösung, für AM5/LGA 1851/1700, 2,73-Zoll-Bildschirm\n\n👉 https://"
+  },
+  {
+   "mid": 74,
+   "k": "prodigeekOfferte/27761",
+   "cat": "Case PC micro-ATX",
+   "prezzo": 50.4,
+   "esito": "buona",
+   "testo": "Thermaltake Versa H16 TG ARGB | Micro Tower | Bianco\n\n👉 https://amzlink.to/az0KKhWFiKkJJ\n\n💰 Prezzo: 50.4€ + Spedizione Gratuita Prime\n🇮🇹 Venduto e spedito da Amazon\n\nVerificata da @ProdigeekOfferte · "
   }
  ],
  "tg_offset": 512829222
